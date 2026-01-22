@@ -1,0 +1,71 @@
+{
+  "download": {
+    "source_priority": ["youtube_api", "yt-dlp"],
+    "fallback_search": "yt-dlp",
+    "max_workers": 4,
+    "output_directory": "downloads",
+    "codec": "flac",
+    "bitrate": 320,
+    "save_metadata": true,
+    "embed_cover": true,
+    "write_m3u": true,
+    "separate_logs_per_file": true
+  },
+
+  "spotify": {
+    "client_id": "YOUR KEY HERE",
+    "client_secret": "YOUR KEY HERE",
+    "market": null
+  },
+
+  "search": {
+    "youtube_api_enabled": true,
+    "youtube_api_key": "YOUR KEY HERE",
+    "soundcloud_enabled": false,
+    "audiocistid_enabled": false,
+
+    "results_per_query": 10,
+
+    "ytapi_query_templates": [
+      "{artist} - {title} official audio",
+      "{artist} - {title} audio",
+      "{artist} {title} audio",
+      "{artist} {title}"
+    ],
+
+    "yt_dlp_query_templates": [
+      "{artist} - {title} audio",
+      "{artist} {title} audio",
+      "{artist} - {title} lyrics"
+    ]
+  },
+
+  "yt_dlp": {
+    "binary": "yt-dlp",
+    "format": "bestaudio/best",
+    "ignore_errors": true,
+    "postprocessors": [
+      {
+        "key": "FFmpegExtractAudio",
+        "preferredcodec": "flac",
+        "preferredquality": "0"
+      }
+    ],
+    "extra_args": [
+      "--no-warnings",
+      "--no-call-home",
+      "--restrict-filenames"
+    ]
+  },
+
+  "logging": {
+    "verbose": false,
+    "debug": false,
+    "color": true,
+    "log_each_file_separately": true
+  },
+  "fingerprinting": {
+    "fpcalc_path": "songdownloader/fpcalc.exe"
+  }
+
+}
