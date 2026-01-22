@@ -1,0 +1,14 @@
+aiohttp>=3.9
+librosa>=0.10
+mutagen>=1.47
+numpy>=1.26
+pathvalidate>=3.2
+python-json-logger>=2.0
+ratelimit>=2.2
+requests>=2.31
+rich>=13.7
+spotipy>=2.23
+tenacity>=8.2
+tqdm>=4.66
+yt-dlp>=2024.12.23
+Pillow>=10.2
