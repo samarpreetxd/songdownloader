@@ -7,6 +7,8 @@ songdownloader is a sophisticated audio retrieval pipeline designed to ensure th
 
 It combines multiple techniques to automatically reject low-quality upscales, incorrect tracks, and music videos with dialogue.
 
+> **Due to the recent changes in the spotify api, you now need a spotify premium account to use the program.**
+
 ## Design Goals
 
 * Prioritize metadata correctness over download speed
